@@ -12,6 +12,7 @@ import categoryRoutes from "./routes/categories.js";
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
+console.log(port);
 
 /* Middlewares */
 app.use(express.json());
@@ -43,5 +44,5 @@ app.get("/", (req, res) => {
 
 /* Port Listening In */
 app.listen(port, () => {
-  console.log(`Server is running in PORT ${port}`);
+  console.log(`Server is running at https://localhost:${port}`);
 });
